@@ -4,7 +4,8 @@ import Home from './screen/Home';
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  HashRouter
 } from "react-router-dom";
 import Login from './screen/Login';
 import Signup from './screen/SignUp.js';
@@ -25,7 +26,7 @@ function App() {
   }
   return (
     <FoodState>
-    <Router>
+    <HashRouter>
     <Alert alert={alert}/>
       <div>
         <Routes>
@@ -35,7 +36,7 @@ function App() {
           <Route exact path="/myorder" element={<MyOrder />} />
         </Routes>
       </div>
-    </Router>
+    </HashRouter>
     </FoodState>
   );
 }
