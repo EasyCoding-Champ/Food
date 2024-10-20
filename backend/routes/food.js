@@ -171,8 +171,8 @@ router.post('/api/payment', async (req, res) => {
     }, {
       headers: {
         'Content-Type': 'application/json',
-        'x-client-id': 'your key',
-        'x-client-secret': 'your key',
+        'x-client-id': 'TEST1033061394a9be7881d63f67cf2f31603301',
+        'x-client-sct': 'cfsk_ma_test_fc2c673f8f83cb607ef02b59776a4ba5_62028b38',
         'x-api-version' :'2023-08-01',
       }
     });
